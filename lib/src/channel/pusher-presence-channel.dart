@@ -13,7 +13,7 @@ class PusherPresenceChannel extends PusherChannel
   @override
   PusherPresenceChannel here(Function callback) {
     this.on('pusher:subscription_succeeded', (data) {
-      callback((data.members).map((k) => data.members[k]));
+      callback(data);
     });
 
     return this;
@@ -22,7 +22,7 @@ class PusherPresenceChannel extends PusherChannel
   /// Listen for someone joining the channel.
   @override
   PusherPresenceChannel joining(Function callback) {
-    this.on('pusher:member_added', (member) => callback(member.info));
+    this.on('pusher:member_added', (data) => callback(data));
 
     return this;
   }
@@ -30,7 +30,7 @@ class PusherPresenceChannel extends PusherChannel
   /// Listen for someone leaving the channel.
   @override
   PusherPresenceChannel leaving(Function callback) {
-    this.on('pusher:member_removed', (member) => callback(member.info));
+    this.on('pusher:member_removed', (data) => callback(data));
 
     return this;
   }

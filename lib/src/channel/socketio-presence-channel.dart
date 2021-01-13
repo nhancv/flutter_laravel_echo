@@ -9,8 +9,8 @@ class SocketIoPresenceChannel extends SocketIoPrivateChannel implements Presence
 
   /// Register a callback to be called anytime the member list changes.
   SocketIoPresenceChannel here(Function callback) {
-    this.on('presence:subscribed', (List<dynamic> members) {
-      callback(members.map((m) => m['user_info']));
+    this.on('presence:subscribed', (members) {
+      callback(members);
     });
 
     return this;
@@ -18,14 +18,14 @@ class SocketIoPresenceChannel extends SocketIoPrivateChannel implements Presence
 
   /// Listen for someone joining the channel.
   SocketIoPresenceChannel joining(Function callback) {
-    this.on('presence:joining', (member) => callback(member['user_info']));
+    this.on('presence:joining', (member) => callback(member));
 
     return this;
   }
 
   /// Listen for someone leaving the channel.
   SocketIoPresenceChannel leaving(Function callback) {
-    this.on('presence:leaving', (member) => callback(member['user_info']));
+    this.on('presence:leaving', (member) => callback(member));
 
     return this;
   }
