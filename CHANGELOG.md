@@ -1,3 +1,7 @@
+## [0.3.0] - 13.01.2021
+
+- Fix presence event
+
 ## [0.2.9] - 13.01.2021
 
 - Update package name

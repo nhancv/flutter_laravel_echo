@@ -1,7 +1,7 @@
 import 'package:example/modal.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_laravel_echo/laravel_echo.dart';
+import 'package:flutter_laravel_echo/flutter_laravel_echo.dart';
 import 'package:socket_io_client/socket_io_client.dart' as IO;
 
 class SocketioPage extends StatefulWidget {
