@@ -24,7 +24,7 @@ In your `pubspec.yaml` file:
 dependencies:
   ...
   socket_io_client: ^0.9.1
-  laravel_echo:
+  flutter_laravel_echo:
 ```
 
 import `socket_io_client`
@@ -81,7 +81,7 @@ In your `pubspec.yaml` file:
 dependencies:
   ...
   flutter_pusher_client: ^0.3.1
-  laravel_echo: ^0.2.5
+  flutter_laravel_echo: ^0.2.5
 ```
 
 import `flutter_pusher_client`

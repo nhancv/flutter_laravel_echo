@@ -1,5 +1,5 @@
-import 'package:laravel_echo/src/util/event-formatter.dart';
-import 'package:laravel_echo/src/channel/channel.dart';
+import 'package:flutter_laravel_echo/src/util/event-formatter.dart';
+import 'package:flutter_laravel_echo/src/channel/channel.dart';
 
 ///
 /// This class represents a Socket.io channel.

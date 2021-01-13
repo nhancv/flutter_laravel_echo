@@ -1,3 +1,7 @@
+## [0.2.9] - 13.01.2021
+
+- Update package name
+
 ## [0.2.8] - 31.10.2020
 
 - Fix issue with PrivateChannel #33

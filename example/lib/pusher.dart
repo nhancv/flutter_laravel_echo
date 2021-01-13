@@ -1,7 +1,7 @@
 import 'package:example/modal.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:laravel_echo/laravel_echo.dart';
+import 'package:flutter_laravel_echo/laravel_echo.dart';
 import 'package:flutter_pusher_client/flutter_pusher.dart';
 
 class PusherPage extends StatefulWidget {

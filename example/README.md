@@ -8,7 +8,7 @@ In your `pubspec.yaml` file:
 dependencies:
   ...
   socket_io_client: ^0.9.1
-  laravel_echo:
+  flutter_laravel_echo:
 ```
 
 import `socket_io_client`
