@@ -83,4 +83,10 @@ class Echo {
   String sockedId() {
     return this.connector.socketId();
   }
+  
+  /// Listen directly for laravel notifications on a channel instance.
+  /// https://laravel.com/docs/8.x/notifications
+  Channel notification(Function callback) {
+    return this.connector.notification(callback);
+  }
 }
